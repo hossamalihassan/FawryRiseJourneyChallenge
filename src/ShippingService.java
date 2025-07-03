@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 
 public class ShippingService {
-    ArrayList<ShippleProuduct> shippableProducts;
+    ArrayList<ShippableProduct> shippableProducts;
 
     ShippingService() {}
 
-    boolean ship(ArrayList<ShippleProuduct> shippableProducts) {
+    boolean ship(ArrayList<ShippableProduct> shippableProducts) {
         return true;
     }
 }

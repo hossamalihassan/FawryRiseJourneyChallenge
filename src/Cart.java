@@ -11,4 +11,8 @@ public class Cart {
         product.decreaseQuantity(quantity);
         productsInCart.add(product);
     }
+
+    public ArrayList<Product> getProductsInCart() {
+        return productsInCart;
+    }
 }
