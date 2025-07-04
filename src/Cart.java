@@ -1,18 +1,18 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Cart {
-    ArrayList<Product> productsInCart;
+    HashMap<Product, Integer> productsInCart;
 
     Cart() {
-        ArrayList<Product> productsInCart = new ArrayList<>();
+        this.productsInCart = new HashMap<>();
     }
 
     public void add(Product product, int quantity) {
-        product.decreaseQuantity(quantity);
-        productsInCart.add(product);
+        productsInCart.put(product, quantity);
     }
 
-    public ArrayList<Product> getProductsInCart() {
+    public HashMap<Product, Integer> getProductsInCart() {
         return productsInCart;
     }
 }

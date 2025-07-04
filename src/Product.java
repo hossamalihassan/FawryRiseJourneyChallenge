@@ -11,6 +11,7 @@ public class Product {
 
     public int getQuantity() { return this.quantity; }
     public String getName() { return this.name; }
+    public double getPrice() { return this.price; }
     public boolean decreaseQuantity(int amount) {
         if(this.quantity < amount) { return false; }
 
